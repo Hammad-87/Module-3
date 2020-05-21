@@ -62,12 +62,6 @@
                     loadedSongs = json.data;
                     calculateDuration(loadedSongs)
 
-                    // REDUCE == ALTERNATIVA A
-                    // let duration = 0;
-                    // loadedSongs.forEach(song => {
-                    //     duration += song.duration
-                    // })
-
                     const albums = loadedSongs.map(song => song.album)
 
                     //NAVIGATION
@@ -141,7 +135,7 @@
             const seconds = duration % 60
 
             return formattedDuration =
-                `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}` // The padStart() method pads the current string with another string (multiple times, if needed) until the resulting string reaches the given length. The padding is applied from the start of the current string.
+                `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`
         }
     </script>
 
